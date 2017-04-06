@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>Try to make a Calculator</h1>
+<p>ENTER THE NUMBERS WHICH YOU WANT TO CALCULATE</p>
+<p>First number:</p>
+<input type="number" id = "n1">
+<p>Second number:</p>
+<input type="number" id = "n2">
+<br>
+<br>
+<script>
+function plus() {
+	var x,y; 
+	x = parseInt(document.getElementById("n1").value); 
+	y = parseInt(document.getElementById("n2").value);
+	document.getElementById("show1").innerHTML = x+y;
+	 
+}
+function minus() {
+	var x,y; 
+	x = parseInt(document.getElementById("n1").value); 
+	y = parseInt(document.getElementById("n2").value);
+	document.getElementById("show1").innerHTML = x-y;
+	 
+}
+function multiple() {
+	var x,y; 
+	x = parseInt(document.getElementById("n1").value); 
+	y = parseInt(document.getElementById("n2").value);
+	document.getElementById("show1").innerHTML = x*y;
+	 
+}
+function division() {
+	var x,y; 
+	x = parseInt(document.getElementById("n1").value); 
+	y = parseInt(document.getElementById("n2").value);
+	document.getElementById("show1").innerHTML = x/y;
+	 
+}
+function del() {
+	
+	var x,y; 
+	x = parseInt(document.getElementById("n1").value=""); 
+	y = parseInt(document.getElementById("n2").value="");
+	document.getElementById("show1").innerHTML = "";
+
+}
+</script>
+
+<button onclick="plus()">plus</button>
+<button onclick="minus()">minus</button>
+<button onclick="multiple()">multiple</button>
+<button onclick="division()">division</button>
+<button onclick="del()">del</button>
+
+<p>Answer:
+<output id="show1"></output>
+</p>
+</body>
+</html>

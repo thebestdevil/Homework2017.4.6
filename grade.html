@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>及格或不及格?</h1>
+<p>ENTER YOUR GRADE</p>
+<input type="number" id = "n1">
+<br>
+<br>
+<script>
+function plus() {
+	var x 
+	x = parseInt(document.getElementById("n1").value);
+	if (x<60) {document.getElementById("show1").innerHTML = "不及格";} 
+	else {document.getElementById("show1").innerHTML = "及格";}	 
+}
+
+</script>
+
+<button onclick="plus()">SUBMIT</button>
+<p>結果:
+<output id="show1"></output>
+</p>
+</body>
+</html>
